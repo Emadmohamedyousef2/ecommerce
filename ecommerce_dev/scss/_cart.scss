@@ -1,0 +1,192 @@
+/*============================Cart=================================*/
+.cart-title {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+    .num {
+        font-size:19px;
+    }
+}
+.cart {
+  background: rgba(255,255,255,.27);
+  padding-bottom:40px;
+  margin-bottom: 20px;
+        .header-cart {
+            background: $main-color;
+            color:#fff;
+            padding:20px 0;
+            font-weight: bold;
+            border-top-right-radius:10px ;
+            border-top-left-radius:10px ;
+                font-size:14px;
+        }
+        .body-cart {
+            padding:20px;
+        }
+        .cart-row {
+            background: rgba(255,255,255,.41);
+            border-top-right-radius:10px ;
+            border-top-left-radius:10px ;
+            width: 100%;
+            padding: 15px 0;
+            margin-bottom: 10px;
+        }
+    .more__btn {
+        background-color: $main-color;
+        border:1px solid rgba(86,77,164,.38);
+        background-clip: padding-box;
+        display: inline-block;
+        width: 350px;
+        padding: 10px;
+        border-radius: 25px;
+        color: #fff;
+    }
+    .product-img {
+        width:100px;
+        height: 100px;
+        border:1px solid rgba(40,47,54,.08);
+        border-radius: 10px;
+        padding: 15px 10px;
+        background:#fff;
+        text-align: center;
+        float: left;
+        margin-bottom: 20px;
+        @media(min-width:768px){
+            margin-bottom: 0;
+
+
+ 
+         }
+        @media(min-width:992px){
+            width:150px;
+            height: 150px;
+
+ 
+         }
+
+
+        img {
+            max-height: 100%;
+        }
+    }
+    .desc-product {
+        margin-left: 110px;
+        @media(min-width:992px){
+            margin-left: 160px;
+
+
+ 
+         }
+        .txt-lg {
+            color:#040404;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .txt-md {
+            color:rgba(40,47,54,.8);
+            font-size: 16px;
+
+        }
+        .txt-sm {
+            color:rgba(40,47,54,.5);
+            font-size: 14px;
+
+        }
+    }
+
+    .fav
+    {
+        margin-right: 30px;
+        span {
+            font-size: 13px;
+            font-weight: bold;
+            i {
+                color:$main-color;
+            }
+        }
+    } 
+    
+    .remove-fav {
+        margin-top: 5px;
+        span {
+        font-size: 13px;
+        }
+    }
+    .txt-price {
+        font-weight: bold;
+    }
+    .txt-total {
+        font-weight: bold;
+        color:$main-color;
+    }
+}
+.quantity {
+        
+    
+      
+      .value-button {
+        display: inline-block;
+        border: 1px solid #ddd;
+        margin: 0px;
+        width: 24px;
+        height: 20px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 11px 0;
+        background: #eee;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        box-sizing: content-box;
+        line-height: 20px;
+        @media(min-width:992px){
+           width: 38px;
+
+        }
+      }
+      
+      .value-button:hover {
+        cursor: pointer;
+      }
+      
+      #decrease {
+        margin-right: -4px;
+        border-radius: 8px 0 0 8px;
+      }
+       #increase {
+        margin-left: -4px;
+        border-radius: 0 8px 8px 0;
+      }
+      
+     #input-wrap {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      input#number {
+        text-align: center;
+        border: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin: 0px;
+        width: 38px;
+        height: 20px;
+        box-sizing: content-box;
+        display: inline-block;
+        box-sizing: content-box;
+        vertical-align: middle;
+    padding: 11px 0;
+
+      }
+      
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+      }
+}

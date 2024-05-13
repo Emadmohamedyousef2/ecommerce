@@ -1,0 +1,99 @@
+.signup {
+    .form-content {
+        padding: 20px 100px 20px 40px;
+        @media (max-width:576.9px) {
+            padding: 20px  ;
+    
+        }
+    }
+    .form-content label {
+
+        white-space: normal;
+      
+      }
+    .or {
+        font-size: 13px;
+        color: $main-color;
+
+    }
+    .have {
+        font-size: 13px;
+        margin: 0 20px;
+        @media (max-width:576.9px) {
+            margin: 0 10px;
+    
+        }
+    }
+    .sign-up {
+        margin: 0 20px;
+        @media (max-width:576.9px) {
+            margin: 0 10px;
+    
+        }
+
+    }
+    .btn {
+        width: 400px;
+
+        margin: 5px auto ;
+        @media (max-width:576.9px) {
+            width:100%;
+            font-size: 14px;
+    
+        }
+    }
+    input {
+        ::-webkit-input-placeholder { /* Edge */
+            color: #7C7C7C;
+            font-size: 12px;
+    
+          }
+          
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #7C7C7C;
+            font-size: 12px;
+    
+          }
+          
+          ::placeholder {
+            color: #7C7C7C;
+            font-size: 12px;
+          }
+    }
+    ::-webkit-input-placeholder { /* Edge */
+        color: #7C7C7C;
+        font-size: 12px;
+
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #7C7C7C;
+        font-size: 12px;
+
+      }
+      
+      ::placeholder {
+        color: #7C7C7C;
+        font-size: 12px;
+      }
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $main-color;
+    background-color: $main-color;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: #7C7C7C;
+    font-size: 12px;
+
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #7C7C7C;
+    font-size: 12px;
+
+  }
+  
+  ::placeholder {
+    color: #7C7C7C;
+    font-size: 12px;
+  }

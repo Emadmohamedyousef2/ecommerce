@@ -1,0 +1,230 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-size: 15px;
+    color: $black-color;
+    background: $bg-color;
+    font-family: "Lato-Regular" !important;
+   // font-family: $font-family-base  !important;
+
+    overflow-x: hidden;
+    position: relative;
+    transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+    @media (min-width: 576px) {
+        font-size: 17px;
+    }
+    @media (min-width: 992px) {
+        font-size: 19px;
+    }
+}
+.col-lg-4 {
+    
+    @media (max-width: 1200px) {
+        padding:0 5px;
+    }
+}
+@media screen and (max-width: 800px) { .wow{ animation-name: none !important; visibility: visible !important; } }
+.main-color {
+    color:$main-color;
+}
+.padd-md-0 {
+    padding: 0;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-15 {
+    margin-bottom: 15px!important;
+}
+.mb-60 {
+    margin-bottom:40px;
+    @media (min-width: 576px) {
+        margin-bottom:60px;
+    }
+}
+.mb-40 {
+    margin-bottom:40px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.p-m-25 {
+    padding-bottom:25px;
+}
+.p-x-40 {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.title__section {
+    margin-bottom: 10px;
+
+    span {
+        font-size:30px;
+        color:#fff;
+        font-weight: bold;
+    }
+}
+.btn__buy {
+    button {
+        background:$main-color;
+        color: #fff;
+        font-size:13px;
+        @include border-radius(20px);
+        box-shadow: none;
+        padding: 5px 15px 8px;
+        border:3px solid rgba(86,77,164,0.38);
+        position: relative;
+        background-clip: padding-box;
+        span {
+            color:#A2D2FC;
+            margin: 0 5px;
+
+        }
+    }
+
+
+}
+.scrolltop {
+    position: absolute;
+    left:20px;
+    bottom:180px;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    @media(min-width:576px){
+        bottom:50px;
+    }
+    @media(min-width:992px){
+        left:50px;
+    }
+    i {
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        border: 1px solid rgba(40,47,54,0.08);
+        background: #fff;
+        display: inline-block;
+        text-align: center;
+        line-height: 30px;
+        font-size:13px;
+        transform: rotate(180deg);
+    }
+}
+.pb-section {
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+        margin-bottom: 85px;
+    }
+}
+input[type="search"] {
+    @include border-radius(15px);
+    border: 1px solid rgba(114,114,144,0.36);
+    background: #efefef;
+    padding: 0 5px;
+    line-height: 37px;
+}
+.rtl .float__xs {
+    @media (max-width: 768px) {
+        float: none!important;
+        text-align: center;
+    }
+}
+
+.rtl .float__lg {
+    @media (max-width: 1200px) {
+        float: none!important;
+        text-align: center;
+    }
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+}
+.dpdwn {
+    position: relative;
+
+    select {
+        background: transparent;
+        border:0;
+        padding:0 18px 0 10px;
+    }
+    &:after {
+        content: "\f100";
+        font-family: "Flaticon";
+        color: #fff;
+        position: absolute;
+        right:0;
+        top: 6px;
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        pointer-events: none;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+.g-color {
+    color:rgba(10,152,28,.59)!important;
+
+}
+.p-color {
+    color:$main-color!important;
+}
+.l-text {
+    font-size: 16px;
+
+    span {
+        font-size: 16px;
+    }
+}
+.padd-0 {
+    padding: 0!important;
+}
+
+.bg-p {
+    background: rgba(77,97,164,.1);
+    border-radius: 5px;
+    padding: 15px;
+}
+.h-20 {
+    min-height: 120px!important;
+}
+.line-link {
+    text-decoration: underline;
+}

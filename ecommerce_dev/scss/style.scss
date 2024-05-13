@@ -1,0 +1,29 @@
+//Main Style
+@import "bootstrap/functions";
+@import "customVariables";
+@import "bootstrap/bootstrap.scss";
+@import "plugins/lightslider";
+@import "plugins/hover";
+@import "plugins/animate";
+@import "plugins/owl.carousel";
+@import "plugins/owl.theme.default";
+@import "plugins/jquery.range";
+
+/* Custom */
+@import "flaticon";
+
+@import "functions";
+@import "global";
+@import "header";
+
+@import "footer";
+@import "home";
+@import "list";
+@import "item";
+@import "cart";
+@import "settings";
+@import "login";
+@import "signup";
+@import "steps";
+@import "confirm";
+@import "quest";

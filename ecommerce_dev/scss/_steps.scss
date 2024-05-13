@@ -1,0 +1,128 @@
+/*Steps*/
+.side-steps {
+    .cart {
+        .product-img {
+            @media (min-width: 992px) {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .desc-product {
+            @media (min-width: 992px) {
+                margin-left: 110px;
+            }
+        }
+    } 
+}
+.borderd-content {
+    border: 1px solid rgba(112, 112, 112, 0.22);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.step-content {
+    padding: 10px 0;
+    border-radius: 10px;
+    .title-sub-setting {
+        border-bottom: 1px solid rgba(112, 112, 112, 0.22);
+        padding-bottom: 10px;
+        color: rgba(40,47,54,.79);
+    
+    }
+    .settings-tab-content {
+        padding: 15px 0;
+    }
+}
+.order-stage {
+    font-size: 1.2rem;
+    color: rgba(40,47,54,.79);
+    padding:0 0 20px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.22);
+    margin-bottom: 20px;
+    
+    &:last-child {
+        border-bottom: 0;
+    }
+    .custom-control {
+        padding-left: 4rem;
+    }
+    .hint {
+        border: 1px solid rgba(112, 112, 112, 0.22);
+        border-radius: 10px;
+        padding: 5px 15px;
+        float: right;
+        font-size: 14px;
+    }
+    .choose-station {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .cart {
+        margin: 0;
+        padding: 0;
+    }
+}
+.qua {
+    font-size: 13px;
+    font-weight: bold;
+}
+.no-image {
+    .desc-product {
+        margin-left: 0;
+    }
+}
+.save {
+    width:300px;
+    margin: 0 auto;
+    font-size: 17px!important;
+    display: block;
+    padding: 10px 15px!important;
+    border-width: 2px!important;
+    @media (max-width: 576px) {
+        width:200px;
+    }
+}
+.side-steps .txt-lg, .side-steps .txt-md {
+    @media (max-width: 1200px) {
+        font-size: 14px!important;
+    } 
+}
+.ico-wait-level {
+    background: url(../images/sucess-default.png)no-repeat center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: 100%;
+}
+.item-order {
+    width: 20%;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+}
+.d-mo {
+    @media (max-width: 768px) {
+        flex-direction: column!important;
+    }    
+}
+.request-list {
+    border-radius: 10px;
+}
+.request-content {
+    background: rgba(172,172,172,.09);
+    border-radius: 40px;
+    padding: 25px 20px;
+    span {
+        font-size: 15px;
+    }
+}
+.icon-done-lg {
+    width:80px;
+    height: 80px;
+}
+.num {
+    font-size: 14px;
+}

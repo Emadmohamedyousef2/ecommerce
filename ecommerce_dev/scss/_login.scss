@@ -1,0 +1,239 @@
+
+.form-login {
+    width:80%;
+    margin: 0 auto;
+    box-shadow: 0px 3px 6px #00000029;
+    border-bottom-right-radius:10px ;
+    border-top-right-radius:10px;
+    background: #fff;
+    white-space: nowrap;
+    @media (max-width: 991.9px) {
+        width:95%;
+    }
+    @media (max-width:576.9px) {
+        flex-direction: column-reverse;
+        width:100%;
+
+    }
+    .half {
+        width: 50%;
+        display: inline-block;
+        @media (max-width:767.9px) {
+            width:100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            @media (max-width:576.9px) {
+                height: auto;
+        
+            }
+        }
+    }
+    .cover-img {
+        @media (max-width:576.9px) {
+            background: #4d5ea4;
+    
+        }
+    }
+}
+
+.form-content {
+    padding:  20px 0  0 20px ;
+    @media (max-width:576.9px) {
+        padding:  10px ;
+
+    }
+    .icon-login {
+        width: 30px;
+        height: 30px;
+        background: url(../images/ico-login.png)no-repeat;
+        display: inline-block;
+        margin-right: 10px;
+        background-size: 100%;
+    }
+    label {
+        color: $main-color;
+        font-size: 12px;
+      }
+      .custom-control-label {
+        &:before,&:after {
+
+            top: 3px;
+           left: -25px;
+          }
+      }
+      .btn {
+        height: 47px;
+        width: 100%;
+        background: #4D61A4;
+        border: 2px solid #564DA461;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 17px;
+        background-clip: padding-box;
+        margin-bottom: 20px;
+        @media (max-width: 991.9px) {
+            margin-bottom: 10px;
+        }
+      }
+      .btn-fb {
+        background: #3064CE;
+        background-clip: padding-box;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+      .ico-fb {
+          width: 15px;
+          height: 30px;
+          background: url(../images/ico-fb.png)no-repeat center;
+          background-size: 100%;
+          margin-right: 10px;
+          display: inline-block;
+      }
+      .sign-up {
+          color:$main-color;
+          border-bottom:1px solid $main-color;
+          font-size: 12px;
+      }
+}
+.group-input {
+    background: #F2F2F2;
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    @media (max-width: 991.9px) {
+        margin-bottom: 10px;
+    }
+    .ico {
+        width: 20px;
+        height: 20px;
+        &.ico-user {
+
+            background: url(../images/ico-user.png)no-repeat center;
+            display: inline-block;
+            background-size: 100%;
+        }
+        &.ico-pass {
+            width: 15px;
+
+            background: url(../images/ico-pass.png)no-repeat center;
+            display: inline-block;
+            background-size: 100%;
+
+        }
+    }
+    .custom-input {
+        border:0;
+        background: inherit;
+        width: 100%;
+        padding: 10px;
+        border-radius: 25px;
+        outline: none;
+        color: #7C7C7C;
+        font-size: 12px;
+    }
+    ::-webkit-input-placeholder { /* Edge */
+        color: #7C7C7C;
+        font-size: 12px;
+
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #7C7C7C;
+        font-size: 12px;
+
+      }
+      
+      ::placeholder {
+        color: #7C7C7C;
+        font-size: 12px;
+      }
+
+
+}
+
+.forget-pass{
+    font-size: 12px;
+    color: #FF5757;
+    border-bottom: 1px solid #ff5757;
+    margin-right: 5px;
+
+  }
+form.login {
+    width:90%;
+    @media (max-width:576.9px) {
+        width:100%;
+    }
+    
+}
+.custom-control {
+
+    padding-left: 2rem;
+}
+.form-request {
+    textarea {
+        height: 140px;
+        resize: none;
+    }
+    .dpdwn {
+        &:after {
+            color:#282F36;
+            margin-top: 7px;
+            margin-right: 15px;
+        }
+    }
+    .icon-request {
+        width: 30px;
+        height: 30px;
+        background: url(../images/ico-request.png)no-repeat;
+        display: inline-block;
+        margin-right: 10px;
+        background-size: 100%;
+    }
+}
+.location {
+    background: #fff;
+    margin-top: 100px;
+    @media (max-width:767.9px) {
+        flex-direction: column-reverse!important;
+        text-align: center;
+    }
+    .country {
+        color: $main-color;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding-left: 15px;
+    }
+    li {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        @media (max-width:767.9px) {
+            justify-content: center;
+        }
+    }
+    .ico {
+        width: 15px;
+        height: 25px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    $icons: location phone mobile mail;
+    @each $icon in $icons {
+        .ico-#{$icon} {
+            background-image: url(../images/#{$icon}.png);
+        }
+    }
+    .loc-text {padding: 20px 30px 50px;}
+}
+
+.map {
+    height: 300px;
+}

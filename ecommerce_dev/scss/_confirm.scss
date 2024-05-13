@@ -1,0 +1,20 @@
+.confirm-list {
+    background: #fff;
+    padding: 40px 30px;
+    .ico-item {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px;
+    }
+    .item {
+        margin-bottom: 70px;
+        .shopping {
+            width:270px;
+            font-size: 17px!important;
+            padding: 10px 15px!important;
+            border-width: 2px!important;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!--==============================Start Header ==============================-->
+  <header>
+    <div class="top__header">
+      <div class="container-lg clearfix">
+        <div class="float-right">
+          <ul>
+            <li><a href="javascript:;"> Home </a></li>
+            <li><a href="javascript:;"> about us</a></li>
+            <li><a href="javascript:;"> help us </a></li>
+            <li><a href="javascript:;"> contact us </a></li>
+
+          </ul>
+        </div>
+        <div class="float-left">
+          <div class="dpdwn">
+            <select>
+              <option>
+                Arabic
+              </option>
+            </select>
+          </div>
+          <div class="dpdwn">
+            <select>
+              <option>
+                QR
+              </option>
+            </select>
+          </div>
+          <div class="dpdwn">
+            <select>
+              <option>
+                Qatar
+              </option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="btm__header">
+      <div class="container-lg clearfix">
+        <div class="content">
+          <div class="float-left">
+            <div class="logo"><a href="javascript:;"><img src="images/logo-en.png"></a></div>
+          </div>
+          <div class="search">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="all categories" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                  class="fi flaticon-search"></i></button>
+            </form>
+          </div>
+          <div class="actions float-right">
+            <a class="sign__btn" href="javascript:;"><i class="fi flaticon-user"></i><span>signin</span>
+            </a>
+            <a href="#">
+              <i class="fi flaticon-heart"></i><span>favorite</span>
+            </a>
+            <a href="#">
+              <i class="fi flaticon-shopping-cart"></i><span>shopping cart</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!--==============================End Header ==============================-->
+
+
+  <div class="products mt-4">
+    <div class="container-lg">
+      <div class="form-login form-request d-flex">
+
+        <div class="half form-content">
+          <div class="form-title mb-4">
+            <span class="p-color d-flex align-items-center"><i class="icon-request"></i>Request Here</span>
+
+          </div>
+          <div>
+            <form class="login">
+              <div class="group-input">
+
+
+                <input type="text" class="custom-input" id="inlineFormInputGroupUsername2" placeholder="Name">
+              </div>
+              <div class="group-input">
+
+
+                <input type="password" class="custom-input" id="inlineFormInputGroupUsername2" placeholder="Email">
+              </div>
+              <div class="group-input dpdwn">
+
+                <select class="custom-input">
+                  <option> topic </option>
+                  <option> topic 1</option>
+                  <option> topic 2</option>
+                  <option> topic 3</option>
+
+                </select>
+
+              </div>
+              <div class="group-input">
+
+
+                <textarea class="custom-input" placeholder="Enter your message here"></textarea>
+
+              </div>
+              <div>
+                <button class="btn btn-login">Send</button>
+              </div>
+              <div>
+              </div>
+
+            </form>
+          </div>
+
+
+        </div>
+        <div class="half cover-img">
+          <img src="images/request-cover-en.png">
+        </div>
+      </div>
+
+    </div>
+    <div class="location d-flex">
+      <div class="col-12 col-md-4 loc-text">
+        <div class="country"> Qatar , Duha</div>
+        <ul>
+          <li><i class="ico ico-location"></i> lorem ipsum offj lorem </li>
+          <li><i class="ico ico-phone"></i> 4458544</li>
+          <li><i class="ico ico-mobile"></i> +9742154879</li>
+          <li><i class="ico ico-mail"></i>info@elmoheet.com </li>
+
+        </ul>
+      </div>
+      <div class="col-12 col-md-8">
+
+        <div class="content-maps">
+
+          <div class="map">
+
+            <div id="map"></div>
+            <script>
+
+              // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+              // Australia.
+
+
+              // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+              // Australia.
+              function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 5,
+                  center: { lat: 25.0744598, lng: 55.1292164 },
+                  styles: [
+                    {
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#f5f5f5"
+                        }
+                      ]
+                    },
+                    {
+                      "elementType": "labels.icon",
+                      "stylers": [
+                        {
+                          "visibility": "off"
+                        }
+                      ]
+                    },
+                    {
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#616161"
+                        }
+                      ]
+                    },
+                    {
+                      "elementType": "labels.text.stroke",
+                      "stylers": [
+                        {
+                          "color": "#f5f5f5"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "administrative.land_parcel",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#bdbdbd"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#eeeeee"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "poi",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#757575"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "poi.park",
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#e5e5e5"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "poi.park",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#9e9e9e"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "road",
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#ffffff"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "road.arterial",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#757575"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "road.highway",
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#dadada"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "road.highway",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#616161"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "road.local",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#9e9e9e"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "transit.line",
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#e5e5e5"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "transit.station",
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#eeeeee"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [
+                        {
+                          "color": "#c9c9c9"
+                        }
+                      ]
+                    },
+                    {
+                      "featureType": "water",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                        {
+                          "color": "#9e9e9e"
+                        }
+                      ]
+                    }
+                  ]
+                });
+
+                var image = 'images/loc-map.png';
+                var beachMarker = new google.maps.Marker({
+                  position: { lat: 25.0744598, lng: 55.1292164 },
+                  map: map,
+                  icon: image
+                });
+              }
+            </script>
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1rYD_znfOrNZ4nnZySKTHQUMbJAvTXBI&callback=initMap"
+              async defer>
+              </script>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--==============================Start Footer ==============================-->
+  <footer>
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-7 col-md-8">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="enter yourr email" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                  class="fi flaticon-send"></i></button>
+            </form>
+          </div>
+          <div class="col-12 col-sm-5 col-md-4">
+            <ul class="options">
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">arabic <i class="fi flaticon-down-arrow"></i></button>
+                  <div class="dropdown-content">
+                    <a href="#">dolar</a>
+                    <a href="#">LE</a>
+                    <a href="#">Dinar</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">ريال <i class="fi flaticon-down-arrow"></i></button>
+                  <div class="dropdown-content">
+                    <a href="#">dolar</a>
+                    <a href="#">LE</a>
+                    <a href="#">Dinar</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-2">
+            <ul>
+              <li><a href="#">most search</a></li>
+              <li><a href="#">electronies</a></li>
+              <li><a href="#">cras</a></li>
+              <li><a href="#">Tvs</a></li>
+              <li><a href="#">laptop</a></li>
+              <li><a href="#">samsung</a></li>
+              <li><a href="#">Sony</a></li>
+              <li><a href="#">Printer</a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <ul>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <ul>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <ul>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <ul>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <ul>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+              <li><a href="#">lorem ipsum </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      <div class="container">
+        <div class="row">
+          <div class="bottom-footer-content">
+            <div class="store-block d-inline-block">
+              <a href="javascript:;" class="store"><img src="images/Google-Play.png"></a>
+              <a href="javascript:;" class="store"><img src="images/App-Store.png"></a>
+            </div>
+
+            <ul class="social-icon">
+              <li class="insta"><a href="#"><i class="insta"></i></a></li>
+              <li class="pin"><a href="#"><i class="pin"></i></a></li>
+              <li class="twt"><a href="#"><i class="twt"></i></a></li>
+              <li class="fb"><a href="#"><i class="fb"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--==============================End Footer ==============================-->
+  <div class="scrolltop">
+    <div class="scroll icon"><i class="fi flaticon-down-arrow"></i> top </div>
+  </div>
+  <script src="js/all.js"></script>
+</body>
+
+</html>
